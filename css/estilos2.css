@@ -1,0 +1,123 @@
+/* Paleta: https://coolors.co/ff6d00-ff7900-ff8500-ff9100-ff9e00-240046-3c096c-5a189a-7b2cbf-9d4edd */
+/* CSS HEX 
+--pumpkin: #ff6d00ff;
+--heat-wave: #ff7900ff;
+--dark-orange: #ff8500ff;
+--yellow-orange-color-wheel: #ff9100ff;
+--orange-peel: #ff9e00ff;
+--russian-violet: #240046ff;
+--persian-indigo: #3c096cff;
+--purple: #5a189aff;
+--french-violet: #7b2cbfff;
+--dark-orchid: #9d4eddff;
+
+ CSS HSL 
+--pumpkin: hsla(26, 100%, 50%, 1);
+--heat-wave: hsla(28, 100%, 50%, 1);
+--dark-orange: hsla(31, 100%, 50%, 1);
+--yellow-orange-color-wheel: hsla(34, 100%, 50%, 1);
+--orange-peel: hsla(37, 100%, 50%, 1);
+--russian-violet: hsla(271, 100%, 14%, 1);
+--persian-indigo: hsla(271, 85%, 23%, 1);
+--purple: hsla(270, 73%, 35%, 1);
+--french-violet: hsla(272, 63%, 46%, 1);
+--dark-orchid: hsla(273, 68%, 59%, 1); */
+
+* {
+
+    font-family: "Alegreya Sans", sans-serif;
+  }
+  
+  body {
+    background-color: hsla(37, 100%, 50%, 1);
+  }
+  
+  header a {
+    color: rgb(255, 255, 255);
+  }
+  
+  .form-control {
+      display: block;
+      width: 80%;
+      padding: .375rem .75rem;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: rgb(255, 255, 255);
+      background-color: hsla(34, 100%, 50%, 1);
+      background-clip: padding-box;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      border-radius: .25rem;
+      transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+  
+  .btn-outline-success:hover {
+      color: #fff;
+      background-color: #ffffff;
+      border-color: #ffffff;
+  }
+  
+  .btn {
+      border-color: #ffffff; 
+      width: 30%;
+      display: inline-block;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #ffffff;
+      text-align: center;
+      text-decoration: none;
+      vertical-align: middle;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+      background-color: transparent;
+      border: 1px solid;
+      padding: .375rem .75rem;
+      font-size: 1rem;
+      border-radius: .25rem;
+      transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+  .btn-outline-success:hover {
+      color: rgba(255, 255, 255, 0.979);
+      background-color: hsla(26, 100%, 50%, 1);
+      border-color: hsla(26, 100%, 50%, 1);
+  }
+  main{margin: 3rem 0 0 0;}
+  
+  .vidrio {
+    background-color: rgba(5, 0, 10, 0.568);
+    color: rgb(255, 255, 255);
+    backdrop-filter: blur(2rem);
+  }
+  
+  card-img, .card-img-bottom, .card-img-top {
+      width: 15%;
+  }
+  
+  .row {
+  --bs-gutter-x: 0;}
+  
+  .temp{
+      font-size: 5rem;
+      font-weight: 500;
+  }
+  
+  .element.style {
+      
+      width: 60%;
+      margin: auto;
+  }
+  .card{
+      border-radius: .80rem;
+      width: 60%;
+      margin: auto;
+  }
+
+ 
+/* #mapa {
+    height: 100%;
+    width: 50%;
+  } */
