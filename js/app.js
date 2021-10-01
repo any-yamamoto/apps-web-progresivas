@@ -7,10 +7,15 @@ const URL = "https://openweathermap.org/api";
 const boton = document.getElementById("enviar");
 const buscar = document.getElementById("buscar");
 const valorUltimaBusqueda = JSON.parse(localStorage.getItem('busqueda'));
+// const valorUltimaBusquedaMapa = JSON.parse(localStorage.getItem('coordenadas'));
 
 if (valorUltimaBusqueda != null) {
     clima(valorUltimaBusqueda);
+    iniciarMap(valorUltimaBusqueda);
 }
+
+
+
 
 boton.addEventListener("click", () => {
   buscarCiudad(buscar.value);
@@ -85,9 +90,11 @@ function clima(info) {
  
 
 }
+let coord;
 
 function iniciarMap(info){
-    let coord = {lat: info.coord.lat, lng: info.coord.lon};
+    console.log('mapa');
+    coord = {lat: info.coord.lat, lng: info.coord.lon};
     let map = new google.maps.Map(document.getElementById('mapa'),{
       zoom: 10,
       center: coord
@@ -102,3 +109,6 @@ function guardarBusqueda(response){
     localStorage.setItem('busqueda', JSON.stringify(response));
 }
 
+// function guardarBusquedaMapa(coord){
+//     localStorage.setItem('coordenadas', JSON.stringify(coord));
+// }
