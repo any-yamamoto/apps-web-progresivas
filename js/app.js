@@ -90,11 +90,11 @@ function clima(info) {
  
 
 }
-let coord;
+
 
 function iniciarMap(info){
     console.log('mapa');
-    coord = {lat: info.coord.lat, lng: info.coord.lon};
+    let coord = {lat: info.coord.lat, lng: info.coord.lon};
     let map = new google.maps.Map(document.getElementById('mapa'),{
       zoom: 10,
       center: coord
