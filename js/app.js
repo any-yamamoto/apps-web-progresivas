@@ -11,7 +11,8 @@ const valorUltimaBusqueda = JSON.parse(localStorage.getItem('busqueda'));
 
 if (valorUltimaBusqueda != null) {
     clima(valorUltimaBusqueda);
-    iniciarMap(valorUltimaBusqueda);
+    setTimeout(iniciarMap(valorUltimaBusqueda), 3000);
+   
 }
 
 
