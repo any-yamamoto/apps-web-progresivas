@@ -1,4 +1,4 @@
-const API_KEY = "395f3228b9624e4b2be8bcbd46d3f189"; // PEGUEN ACA SU API KEY!!
+const API_KEY = "395f3228b9624e4b2be8bcbd46d3f189";  
 // const API_KEY_MAPS = "AIzaSyCMuK-JPmgs2rtSwW9JVTcE_H7CPmcSBcY";
 const URL = "https://openweathermap.org/api";
 
@@ -86,9 +86,8 @@ function clima(info) {
 
 }
 
-
 function iniciarMap(info){
-    let coord = {lat:`${info.coord.lat}` , lng: `${info.coord.lon}`};
+    let coord = {lat: info.coord.lat, lng: info.coord.lon};
     let map = new google.maps.Map(document.getElementById('mapa'),{
       zoom: 10,
       center: coord
@@ -98,7 +97,6 @@ function iniciarMap(info){
       map: map
     });
 }
-
 
 function guardarBusqueda(response){
     localStorage.setItem('busqueda', JSON.stringify(response));
